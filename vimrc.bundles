@@ -1,0 +1,85 @@
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
+
+" let Vundle manage Vundle, required
+Plugin 'gmarik/Vundle.vim'
+
+" The following are examples of different formats supported.
+" Keep Plugin commands between vundle#begin/end.
+
+" plugin from http://vim-scripts.org/vim/scripts.html
+" Plugin 'L9'
+" The sparkup vim script is in a subdirectory of this repo called vim.
+" Pass the path to set the runtimepath properly.
+" Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
+" Avoid a name conflict with L9
+" Plugin 'user/L9', {'name': 'newL9'}
+
+"---------=== Code/project navigation ===-------------
+" Plugin 'scrooloose/nerdtree'
+" Bundle 'jistr/vim-nerdtree-tabs'
+
+" awesome syntax highlighting
+" TODO: Figure out how to enable correctly for Ruby.
+Bundle 'scrooloose/syntastic'
+
+" Highlights class names + methods more brightly
+" Handy for seeing syntax shape before your eyes
+Bundle "vim-scripts/TagHighlight.git"
+
+" Search everything in the current dir via :Ack
+" Bundle "mileszs/ack.vim"
+
+" Rails :/
+Bundle 'tpope/vim-rails.git'
+
+Bundle 'tpope/vim-commentary'
+
+" This is a lightweight RSpec runner for Vim and MacVim.
+Bundle 'thoughtbot/vim-rspec'
+Bundle 'jgdavey/tslime.vim'
+" Bundle 'tpope/vim-dispatch'
+
+" Vim Ruby
+Bundle 'vim-ruby/vim-ruby'
+
+" Surround your code :)
+Bundle 'tpope/vim-surround'
+
+" Every one should have a pair (Autogenerate pairs for "{[( )
+Bundle 'jiangmiao/auto-pairs'
+
+" Tab completions
+Bundle 'ervandew/supertab'
+
+Plugin 'kana/vim-textobj-user'
+
+" Easy motion for easy motion
+" Bundle 'Lokaltog/vim-easymotion'
+
+" Install https://github.com/kien/ctrlp.vim
+set runtimepath^=~/.vim/bundle/ctrlp.vim
+
+Bundle 'edkolev/promptline.vim'
+
+Plugin 'itchyny/lightline.vim'
+
+" Plugin 'ryanoasis/vim-devicons'
+
+Plugin 'ntpeters/vim-better-whitespace'
+" Show trailing whitespace and spaces before a tab:
+" :highlight ExtraWhitespace ctermbg=red guibg=red
+" :autocmd Syntax * syn match ExtraWhitespace /\s\+$\| \+\ze\\t/
+
+Plugin 'airblade/vim-gitgutter'
+
+Plugin 'nelstrom/vim-textobj-rubyblock'
+
+" Plugin 'wikitopian/hardmode'
+" Plugin 'kbarrette/mediummode'
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
