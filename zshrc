@@ -33,7 +33,8 @@ source ~/.bin/tmuxinator.zsh
 # time that oh-my-zsh is loaded.
 # ZSH_THEME="robbyrussell"
 # ZSH_THEME="sorin"
-ZSH_THEME="cobalt2"
+# ZSH_THEME="cobalt2"
+ZSH_THEME="dracula"
 # ZSH_THEME="bullet-train"
 
 # Uncomment the following line to use case-sensitive completion.

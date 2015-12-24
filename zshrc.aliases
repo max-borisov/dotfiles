@@ -8,7 +8,7 @@
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # alias lc="ls -lahFG"
-alias dot="cd /Volumes/Macintosh\ HD_2/projects/Dotfiles && ls"
+alias dot="cd /Volumes/Macintosh\ HD_2/projects/Dotfiles && la"
 alias vim="/Applications/MacVim.app/Contents/MacOS/Vim"
 alias du="du -hsc"
 alias cl="clear"
