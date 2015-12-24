@@ -1,0 +1,39 @@
+# Set personal aliases, overriding those provided by oh-my-zsh libs,
+# plugins, and themes. Aliases can be placed here, though oh-my-zsh
+# users are encouraged to define aliases within the ZSH_CUSTOM folder.
+# For a full list of active aliases, run `alias`.
+#
+# Example aliases
+# alias zshconfig="mate ~/.zshrc"
+# alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# alias lc="ls -lahFG"
+alias dot="cd /Volumes/Macintosh\ HD_2/projects/Dotfiles && ls"
+alias vim="/Applications/MacVim.app/Contents/MacOS/Vim"
+alias du="du -hsc"
+alias cl="clear"
+alias prj="cd /Volumes/Macintosh\ HD_2/projects/"
+alias biir="prj && cd Ruby:Rails/BIIR/CV"
+alias ont="cd /Volumes/Macintosh\ HD_2/projects/cargomarket"
+alias nrd="cd /Volumes/Macintosh\ HD_2/projects/nerds.dk/advanced"
+alias nrd-scss="nrd && cd web/scss && sass --style compact --sourcemap=none --no-cache application.scss ../css/application.css"
+alias dep="cd /Volumes/Macintosh\ HD_2/projects/RailsDepot/depot"
+alias octo="cd /Volumes/Macintosh\ HD_2/projects/octopress"
+alias proj="cd /Volumes/Macintosh\ HD_2/projects"
+alias rl="source ~/.zshrc"
+alias apa="sudo apachectl restart"
+alias gs="git status"
+alias gb="git branch"
+alias sts="git status"
+alias nrd-all-tests="nrd && cd tests && codecept run unit models/nerds && codecept run unit components/ && codecept run functional -g all && codecept run functional -g upload"
+alias hiddenShow="defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app"
+alias hiddenHide="defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app"
+alias selenium="java -jar /Volumes/Macintosh\ HD_2/soft/web/selenium/selenium-server-standalone-2.43.0.jar -browserSessionReuse"
+alias r:s="rails server"
+alias r:g="rails generate"
+alias r:g:c="rails generate controller"
+alias r:g:s="rails generate scaffold"
+alias pg-start="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start"
+alias pg-stop="pg_ctl -D /usr/local/var/postgres stop -s -m fast"
+alias pg-status="pg_ctl -D /usr/local/var/postgres status"
+alias tmux="tmux -2"
