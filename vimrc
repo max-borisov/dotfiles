@@ -95,7 +95,18 @@ cnoremap <c-l> <right>
 :nmap <Leader>n gt
 :nmap <Leader>p gT
 :nmap <Leader>vi :tabedit ~/.vimrc<CR>
+:nmap <Leader>vp :tabedit ~/.vimrc.bundles<CR>
+:nmap <Leader>vs :source ~/.vimrc<CR>
 map ss <ESC>:w<CR>
+
+ " Turn off arrow keys in Normal mode
+noremap <Up> <NOP>
+noremap <Down> <NOP>
+noremap <Left> <NOP>
+noremap <Right> <NOP>
+
+:inoremap jk <esc>
+
 " nnoremap <leader>hm <Esc>:call ToggleHardMode()<CR>
 
 let g:rspec_command = 'call Send_to_Tmux("time spring rspec {spec}\n")'

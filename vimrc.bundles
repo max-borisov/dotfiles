@@ -42,6 +42,7 @@ Bundle 'tpope/vim-commentary'
 Bundle 'thoughtbot/vim-rspec'
 Bundle 'jgdavey/tslime.vim'
 " Bundle 'tpope/vim-dispatch'
+" Plugin 'benmills/vimux'
 
 " Vim Ruby
 Bundle 'vim-ruby/vim-ruby'
