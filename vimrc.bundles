@@ -78,6 +78,8 @@ Plugin 'airblade/vim-gitgutter'
 
 Plugin 'nelstrom/vim-textobj-rubyblock'
 
+Plugin 'jpo/vim-railscasts-theme'
+
 " Plugin 'zenorocha/dracula-theme', {'rtp': 'vim/'}
 " Plugin 'wikitopian/hardmode'
 " Plugin 'kbarrette/mediummode'
