@@ -6,7 +6,7 @@ export TERM="xterm-256color"
 
 DISABLE_AUTO_TITLE="true"
 
-source ~/.bin/tmuxinator.zsh
+# source ~/.bin/tmuxinator.zsh
 
 # Env config
 [[ -f ~/.zshrc.env ]] && source ~/.zshrc.env
