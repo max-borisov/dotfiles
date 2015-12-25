@@ -11,21 +11,11 @@ DISABLE_AUTO_TITLE="true"
 # Env config
 [[ -f ~/.zshrc.env ]] && source ~/.zshrc.env
 
-# Local env config
-[[ -f ~/.zshrc.env.local ]] && source ~/.zshrc.env.local
-
 # Aliases config
 [[ -f ~/.zshrc.aliases ]] && source ~/.zshrc.aliases
 
 # Local aliases
 [[ -f ~/.zshrc.aliases.local ]] && source ~/.zshrc.aliases.local
-
-#export RBENV_ROOT=/usr/local/var/rbenv
-
-#PATH for rbenv
-#export PATH="$HOME/.rbenv/shims:$PATH"
-#if which rbenv > /dev/null; then eval "$(rbenv init - zsh)"; fi
-#eval "$(rbenv init - zsh)"
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -76,30 +66,9 @@ COMPLETION_WAITING_DOTS="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git brew common-aliases gem battery)
-# plugins=(cake git sublime osx git-flow git-extras npm node theme web-search battery)
 
-# User configuration
-
-export PATH="/opt/local/bin:/opt/local/sbin:/usr/local/heroku/bin:/usr/local/mysql/bin:/Users/Max/.composer/vendor/bin:/opt/local/bin:/opt/local/sbin:/usr/local/pear/bin:/usr/local/pear/share/pear:/usr/local/git/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/local/git/bin"
-
-export RBENV_ROOT=/usr/local/var/rbenv
-
-#PATH for rbenv
-#export PATH="$HOME/.rbenv/shims:$PATH"
-#PATH for jshint
-export PATH="$PATH:/usr/local/bin/jshint"
-#PATH for eslint
-export PATH="$PATH:/usr/local/bin/eslint"
-#PATH for rbenv
-export PATH="$PATH:/usr/local/var/rbenv"
-#PATH for rbenvi shims
-export PATH="$PATH:/usr/local/var/rbenv/shims"
-#PATH for rubocop
-export PATH="$PATH:/usr/local/var/rbenv/shims/rubocop"
-#PATH for ruby
-export PATH="$PATH:/usr/local/var/rbenv/shims/ruby"
-#if which rbenv > /dev/null; then eval "$(rbenv init - zsh)"; fi
-eval "$(rbenv init - zsh)"
+# Local env config
+[[ -f ~/.zshrc.env.local ]] && source ~/.zshrc.env.local
 
 source $ZSH/oh-my-zsh.sh
 
@@ -117,9 +86,3 @@ source $ZSH/oh-my-zsh.sh
 function tab-title {
 	echo -ne "\033]0;"$*"\007"
 }
-
-# added by travis gem
-[ -f /Users/Max/.travis/travis.sh ] && source /Users/Max/.travis/travis.sh
-
-export NVM_DIR="/Users/Max/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
