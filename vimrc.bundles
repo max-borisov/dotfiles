@@ -81,6 +81,12 @@ Plugin 'nelstrom/vim-textobj-rubyblock'
 
 Plugin 'jpo/vim-railscasts-theme'
 
+" PHP
+Plugin 'StanAngeloff/php.vim'
+Plugin 'shawncplus/phpcomplete.vim'
+" Plugin '2072/php-indenting-for-vim'
+Plugin 'joonty/vdebug'
+
 " Plugin 'zenorocha/dracula-theme', {'rtp': 'vim/'}
 " Plugin 'wikitopian/hardmode'
 " Plugin 'kbarrette/mediummode'
