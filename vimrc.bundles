@@ -55,6 +55,7 @@ Bundle 'jiangmiao/auto-pairs'
 
 " Tab completions
 Bundle 'ervandew/supertab'
+let g:SuperTabDefaultCompletionType = "<c-x><c-o>"
 
 Plugin 'kana/vim-textobj-user'
 

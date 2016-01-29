@@ -58,6 +58,9 @@ filetype plugin indent on    " required
 " automatically rebalance windows on vim resize
 autocmd VimResized * :wincmd =
 
+autocmd FileType php setlocal omnifunc=phpcomplete#CompletePHP
+set completeopt=longest,menuone
+
 set nocompatible              " be iMproved, required
 
 " filetype off                  " required
