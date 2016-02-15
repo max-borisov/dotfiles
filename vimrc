@@ -13,15 +13,15 @@ set cursorcolumn
 set title
 set hlsearch
 syntax on
-set list
 set colorcolumn=80
 
 " Make it obvious where 80 characters is
 set textwidth=80
 set colorcolumn=+1
 
-" Display extra whitespace
-set listchars=tab:▸\ ,eol:¬
+set list
+set listchars=space:.,trail:·,precedes:«,extends:»,eol:↲,tab:▸\ 
+" set listchars=tab:▸\ ,eol:¬
 " set listchars=tab:»·,trail:·,nbsp:·
 
 set tabstop=2 shiftwidth=2 expandtab shiftround
@@ -131,25 +131,6 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
-
-" let g:lightline = {
-"       \  'colorscheme': 'wombat',
-"       \  'active': {
-"       \  'left': [ [ 'mode', 'paste'  ],
-"       \            [ 'fugitive', 'readonly', 'filename', 'modified'  ] ]
-"       \ },
-"       \ 'component': {
-"       \   'readonly': '%{&filetype=="help"?"":&readonly?"⭤":""}',
-"       \   'modified': '%{&filetype=="help"?"":&modified?"+":&modifiable?"":"-"}',
-"       \   'fugitive': '%{exists("*fugitive#head")?fugitive#head():""}'
-"       \ },
-"       \ 'component_visible_condition': {
-"       \   'readonly': '(&filetype!="help"&& &readonly)',
-"       \   'modified': '(&filetype!="help"&&(&modified||!&modifiable))',
-"       \   'fugitive': '(exists("*fugitive#head") && ""!=fugitive#head())'
-"       \
-"       \ }
-"       \ }
 
 " Brief help
 " :PluginList       - lists configured plugins
