@@ -53,13 +53,14 @@ endif
 
 runtime macros/matchit.vim
 
-filetype plugin indent on    " required
+filetype plugin indent on
 
 " automatically rebalance windows on vim resize
 autocmd VimResized * :wincmd =
+autocmd BufNewFile,BufRead *.slim set ft=slim
 
-autocmd FileType php setlocal omnifunc=phpcomplete#CompletePHP
-set completeopt=longest,menuone
+" autocmd FileType php setlocal omnifunc=phpcomplete#CompletePHP
+" set completeopt=longest,menuone
 
 set nocompatible              " be iMproved, required
 

@@ -55,7 +55,7 @@ Bundle 'jiangmiao/auto-pairs'
 
 " Tab completions
 Bundle 'ervandew/supertab'
-let g:SuperTabDefaultCompletionType = "<c-x><c-o>"
+" let g:SuperTabDefaultCompletionType = "<c-x><c-o>"
 
 Plugin 'kana/vim-textobj-user'
 
@@ -87,6 +87,10 @@ Plugin 'StanAngeloff/php.vim'
 Plugin 'shawncplus/phpcomplete.vim'
 " Plugin '2072/php-indenting-for-vim'
 Plugin 'joonty/vdebug'
+
+Bundle 'slim-template/vim-slim.git'
+
+Plugin 'tpope/vim-endwise'
 
 " Plugin 'zenorocha/dracula-theme', {'rtp': 'vim/'}
 " Plugin 'wikitopian/hardmode'
