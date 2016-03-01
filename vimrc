@@ -20,8 +20,8 @@ set textwidth=80
 set colorcolumn=+1
 
 set list
-set listchars=space:.,trail:·,precedes:«,extends:»,eol:↲,tab:▸\ 
-" set listchars=tab:▸\ ,eol:¬
+set listchars=space:·,trail:·,precedes:«,extends:»,eol:¬,tab:→→
+" set listchars=space:.,trail:·,precedes:«,extends:»,eol:↲,tab:▸\ 
 " set listchars=tab:»·,trail:·,nbsp:·
 
 set tabstop=2 shiftwidth=2 expandtab shiftround
@@ -123,6 +123,7 @@ let g:tslime_always_current_window = 1
 " set statusline+=%#warningmsg#
 " set statusline+=%{SyntasticStatuslineFlag()}
 " set statusline+=%*
+" set statusline+=%{fugitive#statusline()}
 
 let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
 let g:ctrlp_use_caching = 0
