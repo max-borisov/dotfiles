@@ -65,7 +65,8 @@ autocmd BufNewFile,BufRead *.slim set ft=slim
 set nocompatible              " be iMproved, required
 
 " filetype off                  " required
-" set t_Co=256
+set t_Co=256
+set background=dark
 
 set encoding=utf-8
 scriptencoding utf-8
@@ -132,6 +133,7 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+let g:syntastic_javascript_checkers = ['eslint']
 
 " Brief help
 " :PluginList       - lists configured plugins

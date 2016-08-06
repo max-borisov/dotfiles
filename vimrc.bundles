@@ -81,6 +81,21 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'nelstrom/vim-textobj-rubyblock'
 
 Plugin 'jpo/vim-railscasts-theme'
+Plugin 'jacoborus/tender'
+
+Plugin 'digitaltoad/vim-pug'
+" Bundle "https://github.com/digitaltoad/vim-pug"
+
+" Javascript
+Plugin 'jelera/vim-javascript-syntax'
+Plugin 'pangloss/vim-javascript'
+Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'othree/yajs.vim'
+" Plugin 'othree/yajs.vim', { 'for': 'javascript'}
+Plugin 'mxw/vim-jsx'
+Plugin 'isruslan/vim-es6'
+
+Plugin 'kchmck/vim-coffee-script'
 
 " PHP
 Plugin 'StanAngeloff/php.vim'
