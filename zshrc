@@ -24,8 +24,11 @@ DISABLE_AUTO_TITLE="true"
 # ZSH_THEME="robbyrussell"
 # ZSH_THEME="sorin"
 # ZSH_THEME="cobalt2"
-ZSH_THEME="dracula"
+# ZSH_THEME="agnoster"
+# ZSH_THEME="dracula"
 # ZSH_THEME="bullet-train"
+ZSH_THEME="avit"
+# ZSH_THEME="frisk"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
