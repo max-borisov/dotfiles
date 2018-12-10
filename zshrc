@@ -27,8 +27,18 @@ DISABLE_AUTO_TITLE="true"
 # ZSH_THEME="agnoster"
 # ZSH_THEME="dracula"
 # ZSH_THEME="bullet-train"
-ZSH_THEME="avit"
+# ZSH_THEME="muse"
+# ZSH_THEME="avit"
+# prev theme
+ZSH_THEME="honukai"
+# ZSH_THEME="powerlevel9k/powerlevel9k"
 # ZSH_THEME="frisk"
+
+# POWERLEVEL9K_MODE='nerdfont-complete'
+# source ~/.oh-my-zsh/custom/themes/powerlevel9k
+
+# POWERLEVEL9K_MODE='nerdfont-complete'
+# source ~/powerlevel9k/powerlevel9k.zsh-theme
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -89,3 +99,7 @@ source $ZSH/oh-my-zsh.sh
 function tab-title {
 	echo -ne "\033]0;"$*"\007"
 }
+
+eval "$(direnv hook zsh)"
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"

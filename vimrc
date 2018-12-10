@@ -1,7 +1,9 @@
 " Leader
 let mapleader = " "
 
-set term=screen-256color
+set exrc
+
+" set term=screen-256color
 set ruler
 set backspace=2  " Backspace deletes like most programs in insert mode
 set laststatus=2
@@ -18,6 +20,9 @@ set colorcolumn=80
 " Make it obvious where 80 characters is
 set textwidth=80
 set colorcolumn=+1
+
+set breakindent
+set showbreak=↪
 
 set list
 set listchars=space:·,trail:·,precedes:«,extends:»,eol:¬,tab:→→
@@ -45,7 +50,11 @@ set winheight=999
 set splitbelow
 set splitright
 
-colorscheme railscasts
+set nobackup       " no backup files
+set nowritebackup  " only in case you don't want a backup file while editing
+set noswapfile     " no swap files
+
+colorscheme hybrid
 
 if filereadable(expand("~/.vimrc.bundles"))
   source ~/.vimrc.bundles
@@ -53,6 +62,7 @@ endif
 
 runtime macros/matchit.vim
 
+syntax enable
 filetype plugin indent on
 
 " automatically rebalance windows on vim resize
@@ -115,7 +125,7 @@ noremap <Right> <NOP>
 " nnoremap <leader>hm <Esc>:call ToggleHardMode()<CR>
 
 let g:rspec_command = 'call Send_to_Tmux("time spring rspec {spec}\n")'
-let g:rspec_runner = "os_x_iterm2"
+" let g:rspec_runner = "os_x_iterm2"
 
 " vim-rspec tslime
 let g:tslime_always_current_session = 1
@@ -130,10 +140,13 @@ let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
 let g:ctrlp_use_caching = 0
 
 let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
+" let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_javascript_checkers = ['eslint']
+
+" disable unsafe commands in your project-specific .vimrc files
+set secure
 
 " Brief help
 " :PluginList       - lists configured plugins

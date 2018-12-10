@@ -19,7 +19,7 @@ Plugin 'gmarik/Vundle.vim'
 " Plugin 'user/L9', {'name': 'newL9'}
 
 "---------=== Code/project navigation ===-------------
-" Plugin 'scrooloose/nerdtree'
+Plugin 'scrooloose/nerdtree'
 " Bundle 'jistr/vim-nerdtree-tabs'
 
 " awesome syntax highlighting
@@ -31,7 +31,7 @@ Bundle 'scrooloose/syntastic'
 Bundle "vim-scripts/TagHighlight.git"
 
 " Search everything in the current dir via :Ack
-" Bundle "mileszs/ack.vim"
+Bundle "mileszs/ack.vim"
 
 " Rails :/
 Bundle 'tpope/vim-rails.git'
@@ -90,16 +90,16 @@ Plugin 'digitaltoad/vim-pug'
 Plugin 'jelera/vim-javascript-syntax'
 Plugin 'pangloss/vim-javascript'
 Plugin 'nathanaelkane/vim-indent-guides'
-Plugin 'othree/yajs.vim'
+Bundle 'othree/yajs.vim'
+Bundle 'othree/javascript-libraries-syntax.vim'
+Bundle 'kchmck/vim-coffee-script'
 " Plugin 'othree/yajs.vim', { 'for': 'javascript'}
-Plugin 'mxw/vim-jsx'
-Plugin 'isruslan/vim-es6'
-
-Plugin 'kchmck/vim-coffee-script'
+" Plugin 'mxw/vim-jsx'
+" Plugin 'isruslan/vim-es6'
 
 " PHP
-Plugin 'StanAngeloff/php.vim'
-Plugin 'shawncplus/phpcomplete.vim'
+" Plugin 'StanAngeloff/php.vim'
+" Plugin 'shawncplus/phpcomplete.vim'
 " Plugin '2072/php-indenting-for-vim'
 Plugin 'joonty/vdebug'
 Bundle 'slim-template/vim-slim.git'
