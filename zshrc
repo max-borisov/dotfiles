@@ -29,8 +29,9 @@ DISABLE_AUTO_TITLE="true"
 # ZSH_THEME="bullet-train"
 # ZSH_THEME="muse"
 # ZSH_THEME="avit"
+ZSH_THEME="arrow"
 # prev theme
-ZSH_THEME="honukai"
+# ZSH_THEME="honukai"
 # ZSH_THEME="powerlevel9k/powerlevel9k"
 # ZSH_THEME="frisk"
 
@@ -100,6 +101,6 @@ function tab-title {
 	echo -ne "\033]0;"$*"\007"
 }
 
-eval "$(direnv hook zsh)"
+# eval "$(direnv hook zsh)"
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"

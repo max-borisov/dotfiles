@@ -1,0 +1,60 @@
+[user]
+	name = Max Borisov
+	email = max.borisov@yahoo.com
+[filter "media"]
+	required = true
+	clean = git media clean %f
+	smudge = git media smudge %f
+[push]
+	default = simple
+[core]
+	editor = vim
+	excludesfile = /Users/Max/.gitignore_global
+[color]
+	ui = true
+  diff = auto
+  status = auto
+  branch = auto
+[color "status"]
+  added = green
+  changed = red bold
+  untracked = magenta bold
+[color "branch"]
+  remote = yellow
+  current = green reverse
+  local = cyan
+[merge]
+	tool = opendiff
+[alias]
+	lol = log --graph --decorate --pretty=oneline --abbrev-commit --all -n 20
+	br = branch
+	st = status -s
+	s  = status
+	d  = diff
+	co = checkout
+	ci = commit
+	ph = push
+	pl = pull
+	mr = merge
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[filter "hawser"]
+	clean = git hawser clean %f
+	smudge = git hawser smudge %f
+	required = true
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[color "diff"]
+  ; meta = blue black bold
+  meta = yellow
+  meta = cyan
+  plain = white dim
+  old = red bold
+  new = green bold
